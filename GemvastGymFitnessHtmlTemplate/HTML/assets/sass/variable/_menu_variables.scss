@@ -1,0 +1,235 @@
+// menu bar z-index
+$style_common_z_index:10000;
+
+// menu bar height
+$style_menu_bar_menu_bar_height:90px;
+
+// menu alignment
+$style_menu_bar_menu_item_alignment: flex-end;
+
+// menu background
+$style_menu_bar_menu_bar_bg_from:#ffffff;
+$style_menu_bar_menu_bar_bg_to:#ffffff;
+$style_menu_bar_menu_bar_bg_angle:0deg;
+$style_menu_bar_menu_bar_bg_opacity: 0;
+
+// menu border radius
+$style_menu_bar_menu_bar_radius_top_left:0px;
+$style_menu_bar_menu_bar_radius_top_right:0px;
+$style_menu_bar_menu_bar_radius_bottom_left:0px;
+$style_menu_bar_menu_bar_radius_bottom_right:0px;
+
+// menu font size
+$style_menu_item_menu_item_font_size_font_size:14px;
+
+// menu item text color
+$style_menu_item_menu_item_text_color:$color-black;
+
+// menu item text color hover
+$style_menu_item_menu_item_text_color_hover:$color-red;
+
+// menu item text background
+$style_menu_item_menu_item_bg_hover_from:#fff;
+$style_menu_item_menu_item_bg_hover_to:#fff;
+$style_menu_item_menu_item_bg_hover_angle:0deg;
+$style_menu_item_menu_item_bg_hover_opacity:0;
+
+// menu item text transform
+$style_menu_item_menu_item_tranform:uppercase;
+
+// menu item left and right padding
+$style_menu_item_menu_item_spacing:20px;
+
+// submenu top bottom left right padding
+$style_sub_menu_menu_item_spacing_padding_top:15px;
+$style_sub_menu_menu_item_spacing_padding_left:15px;
+$style_sub_menu_menu_item_spacing_padding_bottom:15px;
+$style_sub_menu_menu_item_spacing_padding_right:15px;
+
+// sub menu box shadow
+$style_sub_menu_panel_shadow_x_offset:0px;
+$style_sub_menu_panel_shadow_y_offset:10px;
+$style_sub_menu_panel_shadow_blur:30px;
+$style_sub_menu_panel_shadow_spread:0px;
+$style_sub_menu_panel_shadow_to:#444;
+$style_sub_menu_panel_shadow_opacity:.2;
+
+// sub menu border
+$style_sub_menu_panel_menu_border_border_top:1px;
+$style_sub_menu_panel_menu_border_border_left:1px;
+$style_sub_menu_panel_menu_border_border_bottom:1px;
+$style_sub_menu_panel_menu_border_border_right:1px;
+$style_sub_menu_panel_menu_border_border_color:#f8f8f8;
+$style_sub_menu_panel_menu_border_opacity:1;
+
+// sub menu background
+$style_sub_menu_sub_menu_bg_from:#fff;
+$style_sub_menu_sub_menu_bg_to:#fff;
+$style_sub_menu_sub_menu_bg_angle:60deg;
+$style_sub_menu_sub_menu_bg_opacity: 1;
+
+// sub menu border radius
+$style_sub_menu_sub_menu_radius_top_left:0px;
+$style_sub_menu_sub_menu_radius_top_right:0px;
+$style_sub_menu_sub_menu_radius_bottom_left:4px;
+$style_sub_menu_sub_menu_radius_bottom_right:4px;
+
+// sub menu panel width
+$style_sub_menu_sub_menu_width:250px;
+
+// sub menu text color
+$style_sub_menu_sub_menu_item_text_color:$color-black;
+
+// sub menu text hover color
+$style_sub_menu_sub_menu_item_text_color_hover:$color-red;
+
+// sub menu hover background
+$style_sub_menu_sub_menu_item_bg_hover_from:#ffffff;
+$style_sub_menu_sub_menu_item_bg_hover_to:#ffffff;
+$style_sub_menu_sub_menu_item_bg_hover_angle:90deg;
+$style_sub_menu_sub_menu_item_bg_hover_opacity: .5;
+
+// mega menu panel width
+$style_mega_menu_panel_width:100%;
+
+// mega menu panel background
+$style_mega_menu_panel_bg_from:#fff;
+$style_mega_menu_panel_bg_to:#fff;
+$style_mega_menu_panel_bg_angle:90deg;
+$style_mega_menu_panel_bg_opacity:1;
+
+// mega menu panel radius
+$style_mega_menu_panel_radius_top_left: 5px;
+$style_mega_menu_panel_radius_top_right: 5px;
+$style_mega_menu_panel_radius_bottom_left: 5px;
+$style_mega_menu_panel_radius_bottom_right: 5px;
+
+// mega menu panel border
+$style_mega_menu_panel_menu_border_border_top:1px;
+$style_mega_menu_panel_menu_border_border_left:1px;
+$style_mega_menu_panel_menu_border_border_bottom:1px;
+$style_mega_menu_panel_menu_border_border_right:1px;
+$style_mega_menu_panel_menu_border_border_color:#f8f8f8;
+$style_mega_menu_panel_menu_border_opacity:1;
+
+// mega menu panel box shadow
+$style_mega_menu_panel_shadow_x_offset:0px;
+$style_mega_menu_panel_shadow_y_offset:10px;
+$style_mega_menu_panel_shadow_blur:30px;
+$style_mega_menu_panel_shadow_spread:0px;
+$style_mega_menu_panel_shadow_to:#444;
+$style_mega_menu_panel_shadow_opacity: .2;
+
+// menu breakpoint
+$style_mobile_menu_responsive_breakpoint:991px;
+
+// mobile menu background
+$style_mobile_menu_mobile_menu_bg_from:#fff;
+$style_mobile_menu_mobile_menu_bg_to:#fff;
+$style_mobile_menu_mobile_menu_bg_angle:0deg;
+$style_mobile_menu_mobile_menu_bg_opacity:1;
+
+// mobile menu text color
+$style_mobile_menu_mobile_menu_item_text_color:$color-black;
+
+// mobile menu item hover color
+$style_mobile_menu_mobile_menu_item_text_color_active:$color-red;
+
+// menu item text decoration
+$style_menu_item_menu_item_text_decoration: none;
+
+// menu item font weight
+$style_menu_item_menu_item_font_weight: 700;
+
+// menu item letter spacing
+$style_menu_item_menu_item_letter_spacing: normal;
+
+// sub menu item font weight
+$style_sub_menu_sub_menu_item_font_weight: 700;
+
+// sub menu item font size
+$style_sub_menu_sub_menu_item_font_size: 14px;
+
+// sub menu item text transform
+$style_sub_menu_sub_menu_item_text_transform: uppercase;
+
+// sub menu item letter spacing
+$style_sub_menu_sub_menu_item_letter_spacing: 1px;
+
+// mobile menu panle width
+$style_mobile_menu_mobile_menu_width: 350px;
+
+// mobile menu panel box shadow
+$style_mobile_menu_mobile_menu_shadow_x_offset:0px;
+$style_mobile_menu_mobile_menu_shadow_y_offset:10px;
+$style_mobile_menu_mobile_menu_shadow_blur:30px;
+$style_mobile_menu_mobile_menu_shadow_spread:0px;
+$style_mobile_menu_mobile_menu_shadow_to:#444;
+$style_mobile_menu_mobile_menu_shadow_opacity: .2;
+
+// moble menu container spacing
+$style_mobile_menu_mobile_menu_container_spacing_top: 20px;
+$style_mobile_menu_mobile_menu_container_spacing_left: 20px;
+$style_mobile_menu_mobile_menu_container_spacing_right: 20px;
+$style_mobile_menu_mobile_menu_container_spacing_bottom: 20px;
+
+// mobile menu font size
+$style_mobile_menu_mobile_menu_item_text_font_size: 13px;
+
+// mobile menu item spacing
+$style_mobile_menu_mobile_menu_item_text_padding_top: 15px;
+$style_mobile_menu_mobile_menu_item_text_padding_left: 10px;
+$style_mobile_menu_mobile_menu_item_text_padding_bottom: 15px;
+$style_mobile_menu_mobile_menu_item_text_padding_right: 10px;
+
+// mobile sub menu item spacing
+$style_mobile_menu_mobile_menu_item_submenu_padding_top: 10px;
+$style_mobile_menu_mobile_menu_item_submenu_padding_left: 7px;
+$style_mobile_menu_mobile_menu_item_submenu_padding_right: 7px;
+$style_mobile_menu_mobile_menu_item_submenu_padding_bottom: 10px;
+
+// mobile sub menu font size
+$style_mobile_menu_mobile_menu_item_submenu_font_size: 13px;
+
+// mobile sub menu color
+$style_mobile_menu_mobile_menu_item_submenu_color: $color-black;
+
+// mobile sub menu open icon border color
+$style_mobile_menu_mobile_menu_open_border_color: $color-black;
+$style_mobile_menu_mobile_menu_open_border_color_opacity: .2;
+
+// mobile sub menu open icon icon color
+$style_mobile_menu_mobile_menu_open_icon_color: $color-black;
+$style_mobile_menu_mobile_menu_open_icon_color_opacity: .5;
+
+// mobile sub menu open icon position
+$style_mobile_menu_mobile_menu_open_icon_position: right;
+
+// mobile sub menu close icon border color
+$style_mobile_menu_mobile_menu_close_icon_border_color: $color-black;
+$style_mobile_menu_mobile_menu_close_icon_border_color_opacity: .2;
+
+// mobile sub menu close icon color
+$style_mobile_menu_mobile_menu_close_icon_color: $color-black;
+$style_mobile_menu_mobile_menu_close_icon_color_opacity: 0.5;
+
+// mobile sub menu close icon position
+$style_mobile_menu_mobile_menu_close_icon_position: right;
+
+// mobile sub menu close icon outside spacomg
+$style_mobile_menu_mobile_menu_close_icon_spacing_top: 20px;
+$style_mobile_menu_mobile_menu_close_icon_spacing_left: 20px;
+$style_mobile_menu_mobile_menu_close_icon_spacing_right: 20px;
+$style_mobile_menu_mobile_menu_close_icon_spacing_bottom: 20px;
+
+
+@mixin dropdown-animation-open(){
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+    pointer-events: auto;
+}
+
+.nav-alignment-#{$style_menu_bar_menu_item_alignment}, .nav-alignment-dynamic{
+	justify-content: $style_menu_bar_menu_item_alignment;
+}

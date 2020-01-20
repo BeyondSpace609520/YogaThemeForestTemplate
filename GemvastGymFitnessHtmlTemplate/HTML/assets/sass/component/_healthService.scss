@@ -1,0 +1,28 @@
+.xs-health-shape{
+	position: absolute;
+	height: 200px;
+	width: 100%;
+	bottom: 25%;
+}
+
+.xs-health-service{
+	position: relative;
+	padding: 90px 0;
+	color: $color-white;
+
+	.xs-overlay{
+		background: rgba(0, 0, 0, 0.8);
+	}
+	.xs-health-service-img{
+		position: absolute;
+		bottom: -90px;
+	}
+	ul{
+		padding: 5px 0 0 17px;
+
+		li{
+			list-style: disc;
+			padding: 4px 0;
+		}
+	}
+}

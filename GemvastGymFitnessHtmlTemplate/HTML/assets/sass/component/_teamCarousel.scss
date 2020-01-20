@@ -1,0 +1,43 @@
+.xs-team-grid{
+	.xs-line{
+		margin: 0 0 55px;
+		font-size: 36px;
+
+		&:before{
+			top: 115px;
+			height: 3px;
+		}
+	}
+	.xs-team{
+		margin-top: 0;
+	}
+	.owl-stage-outer{
+		padding: 12px 0 30px;
+	}
+}
+
+.xs-team-carousel{
+	.owl-nav{
+		position: absolute;
+		left: -270px;
+		bottom: 88px;
+
+		button.owl-next,
+		button.owl-prev{
+			display: inline-block;
+			padding: 0 18px 8px !important;
+			font-size: rem(40px);
+			line-height: rem(40px);
+			background-color: #f5f5f5;
+			@include transition();
+
+			&:hover{
+				color: #fff;
+				background-color: $color-red;
+			}
+			span{
+				line-height: 30px;
+			}
+		}
+	}
+}

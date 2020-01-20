@@ -1,0 +1,55 @@
+.xs-help{
+	.xs-section-heading{
+		margin-bottom: 0;
+	}
+	h2,
+	.btn {
+		margin-top: 20px;
+	}
+	.xs-video-wraper{
+		position: relative;
+		box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.2);
+	}
+	.xs-video-shape{
+		position: absolute;
+		top: 50%;
+		right: -50px;
+		height: 200px;
+		width: 45px;
+		transform: translate(0, -50%);
+		background-repeat: no-repeat;
+	}
+}
+
+// Home Light
+.xs-help-light{
+	margin-bottom: 30px;
+	color: $color-black;
+}
+
+// About
+.xs-help-wm{
+	right: 0;
+	bottom: 100px;
+	z-index: -1;
+	font-size: rem(120px);
+	line-height: rem(120px);
+	color: #dddada;
+}
+
+// Services Details
+.xs-strength{
+	.xs-overlay{
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+	.xs-video-shape{
+		right: inherit;
+		left: -45px;
+	}
+	h2{
+		margin-top: 5px;
+	}
+	p:not(:nth-last-of-type(1)){
+		margin-bottom: 25px;
+	}
+}

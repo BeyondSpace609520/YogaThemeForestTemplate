@@ -1,0 +1,25 @@
+.xs-health{
+	color: $color-gray;
+
+	.twentytwenty-horizontal{
+		.twentytwenty-handle{
+			background-image: -moz-linear-gradient( 90deg, $color-dark-red 0%, $color-red 100%);
+			background-image: -webkit-linear-gradient( 90deg, $color-dark-red 0%, $color-red 100%);
+			background-image: -ms-linear-gradient( 90deg, $color-dark-red 0%, $color-red 100%);
+			background: linear-gradient(90deg, $color-dark-red, $color-red);
+
+			&:before{
+				background-image: -moz-linear-gradient($color-red, #e32f2d);
+				background-image: -webkit-linear-gradient($color-red, #e32f2d);
+				background-image: -ms-linear-gradient($color-red, #e32f2d);
+				background: linear-gradient($color-red, #e32f2d);
+			}
+			&:after{
+				background-image: -moz-linear-gradient(#e32f2d, $color-dark-red);
+				background-image: -webkit-linear-gradient(#e32f2d, $color-dark-red);
+				background-image: -ms-linear-gradient(#e32f2d, $color-dark-red);
+				background: linear-gradient(#e32f2d, $color-dark-red);
+			}
+		}
+	}
+}

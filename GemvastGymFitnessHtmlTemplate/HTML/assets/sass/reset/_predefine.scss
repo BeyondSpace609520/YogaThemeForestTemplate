@@ -1,0 +1,195 @@
+:root {
+	font-size: $fontSize;
+}
+
+body {
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $bodyFont;
+	font-weight: $bodyFontWeight;
+	line-height: $lineHeight;
+	color: $fontColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: $titleFont;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: $color-black;
+}
+
+h1{
+	font-size: rem(50px);
+	font-weight: 900;
+}
+
+h2{
+	font-size: rem(42px);
+	margin-bottom: 25px;
+}
+
+h3{
+	font-size: rem(36px);
+}
+
+h4{
+	font-size: rem(30px);
+}
+
+h5{
+	font-size: rem(24px);
+}
+p:last-child {
+	margin-bottom: 0px;
+}
+iframe {
+	border: none;
+}
+a,
+b,
+div,
+ul,
+li {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+	-moz-outline-: none;
+}
+a:focus,
+a:active,
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+	-moz-outline: none;
+	outline: none;
+}
+img:not([draggable]),
+embed,
+object,
+video {
+	max-width: 100%;
+	height: auto;
+}
+a {
+	text-decoration: none;
+	outline: 0;
+}
+a:active,
+a:focus,
+a:hover,
+a:visited {
+	text-decoration: none;
+	outline: 0;
+}
+img {
+	border: none;
+	max-width: 100%;
+}
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+.xs-clear-both:before,
+.xs-clear-both:after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+button:focus {
+	outline: none;
+}
+
+.xs-section-heading{
+	margin-bottom: 70px;
+	color: $fontColor;
+
+	h2{
+		span{
+			color: $color-red;
+		}
+	}
+	p{
+		font-size: rem(18px);
+	}
+}
+.xs-section-heading2{
+	@extend .xs-section-heading;
+
+	h2,
+	p{
+		color: $color-white;
+	}
+}
+.xs-colummn-heading{
+	h2{
+		font-size: rem(36px);
+
+		span{
+			color: $color-red;
+		}
+	}
+}
+.xs-colummn-heading2{
+	@extend .xs-colummn-heading;
+
+	h2,
+	p{
+		color: $color-white;
+	}
+}
+
+.xs-bg-cover{
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.xs-shape{
+	position: absolute;
+	top: 70px;
+	height: 300px;
+	width: 120px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.xs-line{
+	position: relative;
+
+	&:before{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 4px;
+		width: 45px;
+		content: "";
+		background-color: $color-red;
+	}
+}
+.xs-water-mark{
+	position: absolute;
+	font-size: rem(320px);
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: rem(320px);
+	color: #131313;
+	width: 100%;
+	text-align: center;
+	&.medium-size {
+		font-size: rem(350px);
+	}
+}
+.xs-purple-bg{
+	background: linear-gradient(to right, #fa5a47, #b8240a);
+}

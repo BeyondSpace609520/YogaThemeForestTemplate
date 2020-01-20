@@ -1,0 +1,142 @@
+/* Footer Top */
+.xs-footer-top{
+	padding-top: 80px;
+	padding-bottom: 60px;
+	color: $color-white;
+	background-color: $color-black;
+}
+.xs-footer-subscribe{
+	.widget-title{
+		margin-bottom: 50px;
+		text-transform: capitalize;
+	}
+	.xs-subscribe-form{
+		margin-top: 30px;
+
+		.form-group {
+		    margin-bottom: 5px;
+		}
+		.form-control {
+			padding: 12px 15px;
+			border: 0;
+			border-radius: 0;
+			font-size: 14px;
+			color: $fontColor2;
+			background-color: rgba( 255, 255, 255, 0.09 );
+
+			&.error{
+				border: 1px solid #f63c25;
+			}
+		}
+		@include placeholder( #8c8d8d );
+		button{
+			padding: 10px 30px;
+			border: 1px solid rgba( 255, 255, 255, 0.15 );
+			font-size: 16px;
+			text-transform: uppercase;
+			cursor: pointer;
+			color: #fff;
+			background-color: transparent;
+			@include transition();
+
+			&:hover,
+			&:focus{
+				background-color: $color-red;
+				border-color: $color-red;
+			}
+		}
+	}
+}
+.footer-widget{
+	ul{
+		li{
+			padding: 10px 0;
+
+			a{
+				color: $color-white;
+			}
+		}
+	}
+	.xs-footer-contact-info{
+		margin-top: 0;
+
+		li{
+			padding-bottom: 15px;
+		}
+		i {
+			margin-right: 15px;
+			float: left;
+			font-size: 20px;
+			line-height: 26px;
+			color: $color-red;
+		}
+		p{
+			margin-bottom: 0;
+			overflow: hidden;
+
+			.xs-phone-number{
+				font-size: rem(24px);
+				font-weight: 800;
+				line-height: rem(28px);
+				color: $color-white;
+			}
+		}
+	}
+}
+.xs-footer-logo{
+	margin-bottom: 30px;
+}
+.widget-title{
+	margin: 15px 0 40px;
+	font-size: rem(24px);
+	color: $color-white;
+}
+
+/* Footer Bottom */
+.xs-footer-bottom{
+	color: $color-white;
+	background-color: #000;
+
+	ul{
+		li {
+			display: inline-block;
+			padding: 22px 10px;
+
+			a{
+				display: block;
+				position: relative;
+				font-size: 14px;
+				text-align: center;
+				line-height: 35px;
+				color: $color-white;
+				@include equal-size(35px);
+				@include transition();
+
+				&:after{
+					position: absolute;
+					top: 0;
+					left: 0;
+					font-family: 'iconfont' !important;
+					content: "\ea87";
+					speak: none;
+					color: #808080;
+					font-size: 34px;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					@include equal-size(35px);
+				}
+				&:hover{
+					color: $color-red;
+					&:after{
+						color: $color-red;
+					}
+				}
+			}
+		}
+	}
+}

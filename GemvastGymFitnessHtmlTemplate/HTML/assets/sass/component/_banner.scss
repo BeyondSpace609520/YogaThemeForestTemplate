@@ -1,0 +1,198 @@
+.xs-banner {
+    padding-top: 245px;
+    padding-bottom: 245px;
+}
+
+.xs-banner-subtitle {
+    margin-bottom: 0;
+    font-size: rem(30px);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-white;
+}
+
+.xs-banner-title {
+    margin-bottom: 35px;
+    font-size: rem(120px);
+    line-height: rem(120px);
+    color: $color-white;
+    text-indent: -5px;
+    span {
+        color: $color-red;
+        text-indent: -5px;
+    }
+}
+
+// Home-dark
+.xs-banner-dark {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    .xs-banner-title {
+        font-size: rem(80px);
+        line-height: rem(100px);
+        text-transform: inherit;
+    }
+}
+
+.xs-banner-dark-shape {
+    top: 270px;
+}
+
+// Home-light
+.xs-slider-light-owl {
+    .owl-item {
+        visibility: hidden;
+        @include transition();
+        &.active {
+            visibility: visible; // For Animation
+            @include xs-animatin();
+        }
+        img {
+            max-width: 100%;
+            width: inherit;
+        }
+    }
+    .xs-slide-inner {
+        position: relative;
+        @include display-flex();
+        @include vertical-middle();
+        flex-direction: column;
+        justify-content: center;
+        min-height: 840px;
+        .xs-banner-title {
+            margin-bottom: 55px;
+            font-family: $slideFont;
+            font-size: rem(80px);
+            font-weight: 800;
+            line-height: rem(100px);
+            text-transform: inherit;
+            color: $color-black;
+            &:before {
+                top: inherit;
+                bottom: -30px;
+            }
+        }
+        p {
+            font-size: rem(20px);
+        }
+        .btn {
+            margin-top: 20px;
+
+        }
+    }
+    .xs-before-text,
+    .xs-after-text {
+        position: absolute;
+        top: 197px;
+        font-size: rem(250px);
+        line-height: rem(250px);
+        color: #ee0c08;
+        font-family: $slideFont;
+        font-weight: 800;
+        &::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    .xs-before-text {
+        left: calc(50% - 517px); // z-index: -1;
+        background-image: -webkit-linear-gradient(left, #c41330 0%, #f63c25 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &::before {
+            text-shadow: 4.226px 9.063px 15px rgba(0, 0, 0, 0.2);
+        }
+    }
+    .xs-after-text {
+        left: calc(50% + 80px);
+        background-image: -webkit-linear-gradient(left, #f63c25 0%, #ff7640 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &::before {
+            text-shadow: 8.452px 18.126px 15px rgba(0, 0, 0, 0.15);
+        }
+    }
+    .xs-light-slide-img3 {
+        margin-top: 130px;
+        img {
+            margin: 0 auto;
+        }
+    }
+    .xs-light-slide1 {
+        margin-top: 190px;
+    }
+    .xs-light-slide2 {
+        margin-top: 220px;
+    }
+    .xs-light-slide-img1 {
+        margin-left: -465px;
+        margin-right: -65px;
+        margin-top: 65px;
+    }
+    .xs-light-slide-img2 {
+        margin-left: -320px;
+        margin-right: -140px;
+        margin-top: 90px;
+    }
+    .xs-water-mark {
+        top: 260px;
+        left: -175px;
+        z-index: -1;
+        font-size: rem(385px);
+        color: #eaeaea;
+    }
+}
+
+.xs-banner-light-right {
+    top: 17%;
+    right: 0;
+    width: 120px;
+    height: 430px;
+    z-index: 2;
+}
+
+.xs-banner-light-left {
+    top: 25%;
+    left: 0;
+    height: 380px;
+    width: 210px;
+}
+
+// Clips Animation
+.xs-clips-wraper {
+    position: absolute;
+    top: 180px;
+    left: 100px;
+}
+
+// Banner Area
+.xs-banner-area {
+    padding-top: 130px;
+    padding-bottom: 140px;
+    .xs-banner-title {
+        margin: 0;
+        font-size: rem(80px);
+        line-height: rem(80px);
+        text-transform: uppercase;
+    }
+}
+
+.xs-slide-inner {
+    .xs-shape {
+        z-index: -1;
+    }
+}
+
+.banner_right_shape {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.banner-inner-wraper {
+    position: relative;
+}

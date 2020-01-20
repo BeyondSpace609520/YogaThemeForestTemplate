@@ -1,0 +1,35 @@
+.xs-map-about {
+    height: 100%;
+}
+
+.xs-contact-info {
+    padding: 80px 30px 70px;
+    background-color: $color-black2;
+    ul {
+        margin-top: 35px;
+        li {
+            &:not(:last-child) {
+                border-bottom: 1px solid #393939;
+            }
+            span {
+                width: 145px;
+                float: left;
+                font-size: 20px;
+                font-weight: 800;
+                text-transform: uppercase;
+            }
+            p {
+                overflow: hidden;
+            }
+            >a {
+                padding: 10px 30px;
+                color: $color-white;
+                @include transition();
+				&.active,
+				&:hover {
+                    background-color: $color-red;
+                }
+            }
+        }
+    }
+}

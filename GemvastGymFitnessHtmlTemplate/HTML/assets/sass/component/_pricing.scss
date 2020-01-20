@@ -1,0 +1,163 @@
+.xs-pricing-shape{
+	top: 135px;
+}
+.xs-pricing{
+	padding: 50px;
+	margin-bottom: 35px;
+	background-color: $color-white;
+	background-repeat: no-repeat;
+	text-align: center;
+	@include transition();
+
+	h3{
+		font-size: rem(20px);
+		font-weight: 700;
+	}
+	p{
+		font-size: rem(72px);
+
+		span{
+			font-weight: 700;
+			color: $color-red;
+		}
+		sup{
+			top: -40px;
+			left: 15px;
+			font-size: rem(28px);
+			color: $color-red;
+		}
+		sub{
+			bottom: 0;
+			right: 10px;
+			font-size: rem(20px);
+		}
+	}
+	ul li {
+	    padding: 8px;
+	}
+	.btn-primary{
+		margin-top: 35px;
+		padding: 10px 40px;
+		background-color: $color-black;
+	}
+	&:hover{
+		.btn-primary:not(:disabled):not(.disabled):active,
+		.btn-primary:focus,
+		.btn-primary{
+			background-color: $color-red;
+		}
+	}
+}
+
+
+// Pricing
+.xs-pricing-white,
+.xs-pricing-dark{
+
+	.xs-pricing{
+		.xs-line:before{
+			top: inherit;
+			bottom: -20px;			
+			left: calc(50% - 16px);
+			height: 2px;
+			width: 30px;
+			@include transition();
+		}
+		p {
+			margin-top: 40px;
+			font-size: rem(54px);
+
+			sup {
+				top: -32px;
+			}
+		}
+		.btn-primary{
+			margin-top: 25px;
+			padding: 10px 30px;
+		}
+	}
+	[class^=col]:last-child{
+		.xs-pricing{
+			border-right: 0;
+		}
+	}
+}
+
+
+// Pricing Dark
+.xs-pricing-dark-shape{
+	position: absolute;
+	height: 200px;
+	width: 100%;
+	bottom: 25%;
+}
+
+.xs-pricing-dark{
+	.xs-pricing{
+		margin-bottom: 10px;
+		border-right: 1px solid #2e2e2e;
+		color: $color-white;
+		background-color: $color-black2;
+
+		h3,
+		p span,
+		sup{
+			color: $color-white;
+		}
+		.btn-primary{
+			background-color: $color-red;
+		}
+		&:hover,&.isActive{
+			background-color: $color-red;
+		}
+		&:hover,&.isActive{
+			.xs-line:before,
+			.btn-primary:not(:disabled):not(.disabled):active,
+			.btn-primary:focus,
+			.btn-primary{
+				color: $color-black;
+				background-color: $color-white;
+			}
+		}
+	}
+}
+
+
+// Pricing White
+.xs-pricing-white{
+	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.08);
+
+	.xs-pricing{
+		margin-bottom: 0;
+		border-right: 1px solid #f0f0f0;
+		color: $color-black;
+		background-color: $color-white;
+
+		.btn-primary,
+		&:hover{
+			background-color: $color-red;
+		}
+		&:hover{
+			&,
+			h3,
+			p span,
+			sup{
+				color: $color-white;
+			}
+			.btn-primary:not(:disabled):not(.disabled):active,
+			.btn-primary:focus,
+			.btn-primary{
+				color: $color-white;
+				background-color: $color-black;
+			}
+			.xs-line:before{
+				background-color: $color-white;
+			}
+		}
+	}
+}
+.xs-pricing-shape-wraper{
+	.xs-pricing-shape{
+		top: 180px;
+	}
+}

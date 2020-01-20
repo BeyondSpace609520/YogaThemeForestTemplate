@@ -1,0 +1,59 @@
+// Margin & Padding
+@mixin mar-pad($selector, $property, $unit, $until, $start) {
+	@for $i from 0 through round( ($until - $start) / $unit) {
+		#{$selector}-#{$i * $unit + $start} { #{$property}:#{$i * $unit + $start}px; }
+	}
+}
+
+//usage: @include shift([property],[duration],[easing]);
+@mixin transition($property: all, $duration: .4s, $ease: ease){
+	transition: $property $duration $ease;
+}
+
+@mixin equal-size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin display-flex() {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+@mixin vertical-middle() {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+@mixin placeholder($color: #8c8d8d, $Fsize: 14px, $selector: '') {
+	input#{$selector}::-webkit-input-placeholder {
+		color: $color;
+		font-size: $Fsize;
+	}
+	input#{$selector}::-moz-placeholder {
+		color: $color;
+		font-size: $Fsize;
+	}
+	input#{$selector}::-ms-input-placeholder {
+		color: $color;
+		font-size: $Fsize;
+	}
+	input#{$selector}::placeholder {
+		color: $color;
+		font-size: $Fsize;
+	}
+}
+
+// For Animaito
+@mixin xs-animatin($duration: 0.6s, $delay: 300ms) {
+	.xs-fadeInLeft{
+		animation: fadeInLeft $duration ease-in-out $delay both;
+	}
+	.xs-fadeInRight{
+		animation: fadeInRight $duration ease-in-out $delay both;
+	}
+	.xs-slideInDown{
+		animation: slideInDown $duration ease-in-out $delay both;
+	}
+}

@@ -1,0 +1,236 @@
+/* section padding */
+.xs-section-padding {
+	padding: 90px 0;
+}
+.xs-section-padding-lg {
+	padding: 100px 0;
+}
+.xs-section-padding-sm {
+	padding: 70px 0;
+}
+.xs-section-padding-xs {
+	padding: 50px 0;
+}
+.xs-pb-sm{
+	padding-bottom: 70px;
+}
+.xs-pt-xs{
+	margin-top: 50px;
+}
+.btn-primary{
+	padding: 15px 30px;
+	border: 0;
+	border-radius: 0;
+	font-family: $bodyFont;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: rem(24px);
+	text-transform: uppercase;
+	color: $color-white;
+	background-color: $color-red;
+	@include transition();
+
+	span{
+		margin-left: 3px;
+		@include transition();
+		font-size: 13px;
+		font-weight: normal;
+	}
+	i{
+		margin-left: 0;
+		@include transition();
+	}
+	&:not(:disabled):not(.disabled):active,
+	&:not(:disabled):not(.disabled):active:focus,
+	&:hover,
+	&:focus,
+	&:active{
+		border: 0;
+		outline: 0;
+		color: $color-white;
+		box-shadow: 0 0 0 0;
+		background-color: $color-dark-red;
+
+		i{
+			margin-left: 10px;
+		}
+	}
+}
+.xs-video-btn{
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 50%;
+	font-size: 25px;
+	text-align: center;
+	line-height: 75px;
+	background-image: -moz-linear-gradient(-45deg, #fc6942 0%, #ee0c08 100%);
+	background-image: -webkit-linear-gradient(-45deg, #fc6942 0%, #ee0c08 100%);
+	background-image: -ms-linear-gradient(-45deg, #fc6942 0%, #ee0c08 100%);
+	background: linear-gradient(-45deg, #fc6942 0%, #ee0c08 100%);
+	box-shadow: 0px 5px 10px 0px rgba(246, 60, 37, 0.35);
+	@include equal-size(75px);
+
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		border-radius: 50%;
+		content: "";
+		animation: xs-pulse-anim 1.6s cubic-bezier(0.66, 0.3, 0.2, 1) infinite;
+		
+	}
+	&,
+	&:hover,
+	&:focus{
+		color: #fff;
+	}
+	i{
+		margin-left: 4px;
+	}
+}
+
+@keyframes xs-pulse-anim {
+    0% {
+        box-shadow: 0 0 0 0 rgba($color-white, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 30px rgba($color-white, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba($color-white, 0);
+    }
+}
+
+/* Margin */
+@include mar-pad(".xs-mt", "margin-top", 5, 40, 5);
+@include mar-pad(".xs-mt", "margin-top", 10, 80, 50);
+@include mar-pad(".xs-mb", "margin-bottom", 5, 40, 5);
+@include mar-pad(".xs-mb", "margin-bottom", 10, 80, 50);
+@include mar-pad(".xs-mr", "margin-right", 5, 40, 20);
+
+/* Padding */
+@include mar-pad(".xs-p", "padding", 5, 20, 5);
+@include mar-pad(".xs-pt", "padding-top", 5, 30, 5);
+@include mar-pad(".xs-pt", "padding-top", 10, 90, 40);
+@include mar-pad(".xs-pb", "padding-bottom", 5, 30, 5);
+@include mar-pad(".xs-pb", "padding-bottom", 10, 100, 40);
+@include mar-pad(".xs-pl", "padding-left", 5, 15, 5);
+@include mar-pad(".xs-pr", "padding-right", 5, 15, 5);
+
+/* overlay list */
+.xs-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 0;
+}
+.xs-fix{
+	overflow: hidden;
+}
+
+// first color name and second your selected color
+$colorList: (black, $color-black),
+			(black2, $color-black2),
+			(white, $color-white),
+			(red, $color-red),
+			(green, $color-green),
+			(purple, $color-purple),
+			(dark-red, $color-dark-red),
+			(cyan, $color-cyan),
+			(light, $color-light);
+@each $colorName, $color in $colorList {
+	/* color */
+	.xs-#{$colorName}-color {
+		color: $color;
+	}
+	/* background color */
+	.xs-#{$colorName}-bg {
+		background-color: $color;
+	}
+}
+/* remove from control focus box shadow */
+.form-control {
+	border-color: #222;
+
+	&:focus {
+		box-shadow: none;
+		border-color: #222;
+	}
+}
+
+.xs-form{
+	margin-top: 20px;
+
+	.xs-form-anim{
+		position: relative;
+		padding-top: 25px;
+		margin-bottom: 0;
+
+		&.active{
+			.input-label{
+				bottom: 35px;
+			}
+			input{
+				border-color: #444;
+			}
+		}
+	}
+	.form-control{
+		margin-top: 10px;
+		border: 0;
+		border-radius: 0;
+		border-bottom: 1px solid #e5e5e5;
+		color: $color-black;
+		background-color: transparent;
+		@include transition();
+	}
+	.input-label{
+		position: absolute;
+		bottom: 13px;
+		color: $fontColor;
+		@include transition();
+	}
+	.btn-primary{
+		padding: 10px 45px;
+	}
+}
+.xs-form-dark{
+	.form-control{
+		border-bottom: 1px solid $color-black2;
+		color: $color-white;
+	}
+	.input-label{
+		color: $color-white;
+	}
+}
+
+/* input type number spinner turn of chrome */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* input type number spinner turn of firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.owl-carousel .owl-item img {
+	width: auto;
+}
+
+.xs-brand-owl {
+	cursor: e-resize;
+}

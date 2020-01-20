@@ -1,0 +1,80 @@
+.megamenu_lists {
+    > li {
+        > a {
+            padding: 10px;
+            color: $color-black;
+        }
+    }
+}
+
+.xs-container {
+    width: 100%;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    padding: {
+        left: 15px;
+        right: 15px;
+    }
+    position: relative;
+    max-width: 1140px;
+}
+.xs-navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9;
+}
+.xs-navbar-brand {
+    text-decoration: none;
+    color: #000000;
+    > h2 {
+        margin: {
+            top: 0;
+            bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .elementskit-header {
+        .elementskit-menu-container {
+            position: static;
+        }
+    }
+    .elementskit-megamenu-panel {
+        > li {
+            display: inline-block;
+            width: (100% / 4);
+            float: left;
+        }
+    }
+}
+
+@import './nav-tools/modal-search';
+
+@import './nav-tools/modal';
+
+@import './nav-tools/offsetCart';
+
+@import './nav-tools/offsetInfoBar';
+
+@import './nav-tools/offsetSidebar';
+
+.xs-menu-tools {
+    > li {
+        display: inline-block;
+        margin-left: 15px;
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+        > a {
+            color: $color-black;
+            text-decoration: none;
+        }
+    }
+}

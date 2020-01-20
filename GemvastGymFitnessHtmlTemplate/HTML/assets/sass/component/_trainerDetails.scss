@@ -1,0 +1,117 @@
+.xs-trainer-details{
+	.xs-column-heading{
+		margin-bottom: 5px;
+		overflow: hidden;
+
+		h2{
+			line-height: rem(36px);
+		}
+	}
+	.xs-trainer-thumb{
+		img{
+			width: 100%;
+		}
+	}
+	ul{
+		li{
+			margin-bottom: 22px;
+			overflow: hidden;
+
+			span{
+				margin-right: 15px;
+				font-size: rem(18px);
+				font-weight: 800;
+				text-transform: uppercase;
+				float: left;
+				color: $color-black;
+			}
+			p{
+				overflow: hidden;
+				font-size: rem(18px);
+				> a {
+					color: inherit;
+				}
+			}
+		}
+	}
+	.xs-social-icons{
+		li{
+			display: inline-block;
+			padding: 5px 20px 5px 0;
+
+			a{
+				display: block;
+				position: relative;
+				font-size: 14px;
+				text-align: center;
+				line-height: 35px;
+				color: $color-white;
+				@include equal-size(35px);
+				@include transition();
+
+				&:after{
+					position: absolute;
+					top: 0;
+					left: 0;
+					font-family: 'iconfont' !important;
+					content: "\ea87";
+					speak: none;
+					font-size: 34px;
+					font-style: normal;
+					font-weight: normal;
+					font-variant: normal;
+					text-transform: none;
+					line-height: 1;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					@include equal-size(35px);
+				}
+				&.xs-facebook{
+					color: $color-facebook;
+				}
+				&.xs-twitter{
+					color: $color-twitter;
+				}
+				&.xs-linkedin{
+					color: $color-linkedin2;
+				}
+				&.xs-instagram{
+					color: $color-instagram2;
+				}
+			}
+		}
+	}
+	.xs-trainer-skills{
+		margin-top: 55px;
+		padding-top: 50px;
+		border-top: 1px solid #e6e6e6;
+
+		ul li{
+			margin-bottom: 25px;
+
+			p{
+				margin: 0;
+
+				span{
+					float: left;
+					margin: 0;
+
+					&.xs-skill{
+						float: right;
+					}
+				}
+			}
+		}
+		.progress{
+			height: 6px;
+			background-color: #f2f2f2;
+
+			.progress-bar{
+				border-radius: 6px;
+				background-image: -moz-linear-gradient(0deg, $color-dark-red 0%, $color-red 100%);
+				background-image: -webkit-linear-gradient(0deg, $color-dark-red 0%, $color-red 100%);
+				background-image: -ms-linear-gradient(0deg, $color-dark-red 0%, $color-red 100%);
+			}
+		}
+	}
+}

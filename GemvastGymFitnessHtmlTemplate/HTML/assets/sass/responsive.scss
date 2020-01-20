@@ -1,0 +1,933 @@
+/*
+Author: XpeedStudio
+Author URI: http://themeforest.net/user/XpeedStudio/portfolio
+*/
+/* ==========================================================================
+   Author's custom styles
+========================================================================== */
+
+/* ------------------------------- Table Of Content  ------------------------------------
+
+
+
+=====================================================**************************/
+
+//variable
+@import 'variable/_variable.scss';
+ // mixin
+@import 'mixin/_mixin.scss';
+
+
+/* Portrait tablets and medium desktops */
+
+@media (max-width: 1400px) {
+	.xs-help{
+		.xs-video-shape {
+			right: -40px;
+			width: 35px;
+		}
+	}
+	.xs-service-content{
+		.xs-icon-wraper {
+			font-size: 40px;
+			line-height: 80px;
+			@include equal-size(80px);
+		}
+	}
+
+	// HOME DARK
+	// ================
+	.xs-health{
+		.xs-water-mark{
+			font-size: rem(270px);
+		}
+	}
+
+	// HOME LIGHT
+	// ================
+	.xs-slider-light-owl{
+		.xs-light-slide-img1 {
+			margin-right: -45px;
+		}
+		.xs-water-mark{
+			font-size: rem(300px);
+		}
+	}
+
+	// SERVICE DETAILS
+	// =================
+	.xs-strength{
+		.xs-video-shape{
+			right: inherit;
+			left: -40px;
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	// Common styles
+	.xs-banner-area {
+	    padding-top: 85px;
+	    padding-bottom: 90px;
+	}
+	.xs-pricing-white,
+	.xs-pricing-dark{
+		.xs-pricing{
+			padding: 50px 30px;
+		}
+	}
+	// Banner Syles
+	.xs-banner-title{
+		font-size: rem(100px);
+		line-height: rem(100px);
+	}
+	.xs-banner-area{
+		.xs-banner-title{
+			font-size: rem(72px);
+		}
+	}
+	// Section Help Styles
+	.xs-help{
+		h2 {
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		.xs-video-shape {
+			right: -30px;
+			width: 25px;
+		}
+		.xs-btn-wraper {
+			margin-top: 25px;
+		}
+	}
+	// Section Services Styles
+	.xs-service-content{
+		padding: 0 30px;
+
+		.xs-icon-wraper {
+			font-size: 30px;
+			line-height: 60px;
+			@include equal-size(60px);
+		}
+		h3{
+			font-size: rem(20px);
+			margin: 20px 0 10px;
+		}
+	}
+	// Section BMI Styles
+	.xs-bmi{
+		.xs-bmi-form{
+			#xs-bmi-info{
+				.xs-icon {
+					padding: 14px 16px;
+					font-size: rem(20px);
+				}
+				p {
+					margin-bottom: 0;
+					padding: 17px;
+					float: left;
+				}
+			}
+		}
+	}
+	// Section Testimonial Styles
+	.xs-testimonial-wraper{
+		.xs-testimonial-shape{
+			top: 110px;
+		}
+	}
+	// Section Blog Styles
+	.xs-blog{
+		font-size: rem(14px);
+
+		.xs-blog-content{
+			padding: 25px;
+		}
+		h3 {
+			margin: 10px 0 35px;
+			line-height: 24px;
+			font-size: rem(20px);
+		}
+	}
+
+	// HOME DARK
+	// ================
+	.xs-container{
+		max-width: 960px;
+	}
+	// Header Styles
+	.xs-header-dark{
+		&:before{
+			width: calc(50% - 220px);
+		}
+		.elementskit-navbar-nav > li > a {
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+		.xs-header-contact {
+			margin-left: 245px;
+		}
+	}
+	// Section Health Styles
+	.xs-health{
+		.xs-water-mark{
+			font-size: rem(220px);
+		}
+	}
+
+	// HOME LIGHT
+	// ================
+	.xs-clips-wraper{
+		display: none;
+	}
+	// Slider Styles
+	.xs-slider-light-owl{
+		.xs-slide-inner{
+			.xs-banner-title{
+				font-size: rem(65px);
+				line-height: rem(75px);
+			}
+		}
+		.xs-before-text,
+		.xs-after-text {
+			font-size: rem(200px);
+			line-height: rem(200px);
+		}
+		.xs-before-text{
+			left: calc(50% - 400px);
+		}
+		.xs-after-text{
+			left: calc(50% + 40px);
+		}
+		.xs-light-slide-img1 {
+			margin-right: -45px;
+		}
+		.xs-light-slide-img2 {
+			margin-left: -350px;
+			margin-right: -60px;
+			margin-top: 110px;
+		}
+		.xs-water-mark{
+			font-size: rem(270px);
+		}
+	}
+	.xs-help-light{
+		margin-bottom: 0;
+	}
+
+	// ABOUT
+	// ========
+	.xs-help-wm{
+		font-size: rem(95px);
+	}
+
+	// SERVICE DETAILS
+	// =================
+	.xs-strength{
+		.xs-video-shape{
+			left: -30px;
+		}
+	}
+	// Section Team Grid Styles
+	.xs-team-grid{
+		.xs-line{
+			margin: 1px 0 45px;
+			font-size: rem(36px);
+
+			&:before{
+				top: 108px;
+			}
+		}
+	}
+	// Section Team Carousel Styles
+	.xs-team-carousel{
+		.owl-nav {
+			left: -225px;
+			bottom: 10px;
+		}
+	}
+}
+
+/* Portrait tablets and small desktops */
+
+@media (max-width: 991px) {
+	// Common Styles
+	.xs-section-padding,
+	.xs-section-padding-lg{
+		padding: 70px 0;
+	}
+	.xs-section-heading,
+	.xs-section-heading2{
+		margin-bottom: 50px;
+	}
+	.xs-pb-sm{
+		padding-bottom: 40px;
+	}
+	.xs-pt-xs{
+		margin-top: 30px;
+	}
+	.xs-banner-area {
+	    padding-top: 60px;
+	    padding-bottom: 65px;
+	}
+	.xs-pricing-wraper,
+	.xs-blog,
+	.xs-team,
+	.xs-about-us{
+		margin-bottom: 40px;
+	}
+	.xs-pricing-wraper [class^=col]:first-child,
+	.xs-pricing-white{
+		.xs-pricing{
+			margin-top: 0;
+		}
+	}
+	.xs-banner-area,
+	.xs-banner-dark{
+		.xs-banner-title{
+			font-size: rem(60px);
+			line-height: rem(70px);
+		}
+	}
+	// Header Styles
+	.xs-navbar{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.xs-menu-tools {
+	    margin-left: 15px;
+	}
+	.elementskit-nav-identity-panel{
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+	.xs-header{
+		.elementskit-submenu-panel > li{
+			&:not(:last-child){
+				border-bottom: 0;
+			}
+		}
+	}
+	// Banner Styles
+	.xs-banner{
+		padding-top: 170px;
+		padding-bottom: 170px;
+	}
+	.xs-banner-title{
+		font-size: rem(75px);
+		line-height: rem(75px);
+
+		&.xs-line:before{
+			top: 165px;
+		}
+	}
+	// Section About Styles
+	.xs-about-us {
+		text-align: center;
+
+		h3{
+			margin-top: 15px;
+		}
+	}
+	// Section Services Styles
+	.xs-services-intro{
+		.xs-section-heading{
+			margin-top: 0;
+		}
+		.xs-btn-wraper{
+		    margin-top: 30px;
+			text-align: left;
+		}
+	}
+	.xs-service-content{
+		.xs-icon-wraper{
+			display: none;
+		}
+		h3{
+			margin-top: 0;
+		}
+		.btn-primary{
+			margin-top: 0;
+			@include equal-size( 70px, 35px );
+		}
+	}
+	// Section Help Styles
+	.xs-help{
+		h2 {
+			font-size: rem(36px);
+		}
+		.xs-video-wraper{
+			img {
+				width: 100%;
+			}
+		}
+		.xs-video-wraper {
+			margin-top: 60px;
+		}
+	}
+	// Section BMI Styles
+	.xs-bmi{
+		.xs-section-heading2{
+			margin-top: 20px;
+		}
+		.xs-bmi-table{
+			padding-top: 10px;
+			padding-right: 0;
+
+			table caption {
+				padding-top: 25px;
+			}
+		}
+	}
+	// Section Testimonial Styles
+	.xs-testimonial-owl{
+		.item{
+			padding-top: 40px;
+
+			i{
+				top: 20px;
+			}
+		}
+	}
+	// Section Pricing Styles
+	.xs-pricing{
+		p {
+			font-size: 60px;
+		}
+	}
+	// Footer Styles
+	.footer-widget{
+		margin-bottom: 40px;
+	}
+	.xs-footer-subscribe{
+		.widget-title{
+			margin-bottom: 30px;
+		}
+	}
+
+	// HOME DARK
+	// ================
+	// Header Styles
+	.xs-container {
+	    max-width: 720px;
+	}
+	.xs-header-dark{
+		&:before {
+			width: calc(50% - 100px);
+		}
+		.xs-login-nav{
+			display: none;
+		}
+		.elementskit-navbar-nav > li > a{
+			color: $color-black;
+
+			&:after{
+				border-color: $color-black;
+			}
+			&:hover,
+			&:focus{
+				color: $color-red;
+
+				&:after{
+					border-color: $color-red;
+				}
+			}
+		}
+		.elementskit-menu-hamburger{
+			border-color: #8c8c8c;
+
+			.elementskit-menu-hamburger-icon{
+				background-color: #8c8c8c;
+			}
+		}
+	}
+	.xs-banner-dark-shape {
+		top: 170px;
+	}
+	// Banner Styles
+	.xs-banner-dark{
+		padding-top: 130px;
+		padding-bottom: 150px;
+
+		.xs-banner-title{
+			margin-bottom: 20px;
+		}
+	}
+	// Section Health Styles
+	.xs-health{
+		.xs-water-mark{
+			font-size: rem(160px);
+		}
+	}
+	.xs-pricing-dark{
+		.xs-pricing{
+			margin-bottom: 40px;
+		}
+	}
+	// Section Shop Styles
+	.xs-shop{
+		margin-bottom: 100px;
+
+		.xs-price-badge{
+			margin-bottom: 15px;
+		}
+	}
+
+	// HOME LIGHT
+	// ================
+	// Slider Styles
+	.xs-slider-light-owl{
+		.xs-slide-inner{
+			min-height: 550px;
+
+			.xs-banner-title{
+				font-size: rem(48px);
+				line-height: rem(60px);
+			}
+		}
+		.xs-before-text,
+		.xs-after-text {
+			font-size: rem(150px);
+			line-height: rem(150px);
+		}
+		.xs-before-text{
+			left: calc(50% - 300px);
+		}
+		.xs-light-slide1,
+		.xs-light-slide2{
+			margin-top: 200px;
+		}
+		.xs-light-slide-img1 {
+			margin-left: -260px;
+			margin-top: 260px;
+		}
+		.xs-light-slide-img2 {
+		    margin-left: -220px;
+		    margin-right: -50px;
+		    margin-top: 200px;
+		}
+		.xs-water-mark {
+		    font-size: 210px;
+		    top: 100px;
+		}
+	}
+	// Section Classes Styles
+	.xs-classes-light{
+		.xs-service-content{
+			.xs-icon-wraper{
+				display: block;
+			}
+			h3{
+				margin-top: 20px
+			}
+			.btn-primary{
+				margin-top: 10px;
+			}
+		}
+	}
+
+	// ABOUT
+	// ======
+	.xs-map-about{
+		height: 400px;
+	}
+
+	// SERVICE DETAILS
+	// =================
+	// Section Strength Styles
+	.xs-strength{
+		.xs-video-wraper{
+			margin-top: 0;
+			margin-bottom: 60px; 
+		}
+	}
+	// Section CTA Styles
+	.xs-cta{
+		h2{
+			margin-top: 6px;
+			font-size: rem(32px);
+		}
+	}
+	// Section Team Grid Styles
+	.xs-team-grid{
+		.xs-line:before{
+			top: 65px;
+		}
+	}
+	// Section Team Carousel Styles
+	.xs-team-carousel{
+		margin: 90px 0 0;
+
+		.owl-nav {
+			left: 15px;
+			bottom: inherit;
+			top: -65px;
+		}
+	}
+	// Section Health Styles
+	.xs-health-service{
+		padding: 70px 0;
+
+		.xs-health-service-img {
+			display: none;
+		}
+	}
+
+	// CONTACT
+	// =================
+	.xs-contact-list{
+		margin-bottom: 40px;
+
+		ul li a{
+			font-size: rem(14px);
+			line-height: rem(14px);
+		}
+	}
+	.xs-contact-form{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+
+	
+}
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+	// Predefined Styles
+	:root {
+		font-size: rem(15px);
+	}
+	h1{
+		font-size: rem(42px);
+	}
+	h2{
+		font-size: rem(36px);
+	}
+	h3{
+		font-size: rem(30px);
+	}
+	h4{
+		font-size: rem(24px);
+	}
+	h5{
+		font-size: rem(18px);
+	}
+	// Common Styles
+	.xs-banner-area {
+	    padding-top: 40px;
+	    padding-bottom: 45px;
+	}
+	.xs-banner-dark,
+	.xs-banner{
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.xs-banner,
+	.xs-banner-dark,
+	.xs-banner-area{
+		.xs-banner-title{
+			font-size: rem(50px);
+			line-height: rem(55px);
+
+			&.xs-line:before{
+				top: 130px;
+			}
+		}
+	}
+	.xs-banner-subtitle {
+		margin-bottom: 15px;
+		line-height: 32px;
+	}
+	// Section About-us Styles
+	.xs-about-us{
+		h3{
+			margin-top: 15px;
+		}
+	}
+	// Section Services Styles
+	.xs-service{
+		.xs-service-content{
+			transform: translate(0, 40px);
+		}
+		img {
+			width: 100%;
+		}
+	}
+	// Section Help Styles
+	.xs-help{
+		h2{
+			margin-top: 0;
+		}
+		.xs-video-shape {
+			display: none;
+		}
+	}
+	// Section BMI Styles
+	.xs-bmi{
+		.xs-bmi-table{
+			table{
+				td,
+				th {
+					padding: 12px 20px;
+				}
+			}
+		}
+	}
+	// Footer Styles
+	.xs-footer-bottom{
+		padding-top: 15px;
+
+		p{
+			text-align: center;
+		}
+	}
+
+	// HOME DARK
+	// ================
+	// Header Styles
+	.xs-container {
+	    max-width: 540px;
+	}
+	.xs-header-dark{
+		&:before{
+			width: calc(50% - 10px);
+		}
+		.xs-navbar-brand{
+			margin-top: -68px;
+		}
+		.xs-header-contact{
+			margin-left: 0;
+			width: 100%;
+			text-align: right;
+		}
+		.elementskit-menu-hamburger {
+			margin-left: 40px;
+		}
+	}
+	.xs-banner-dark-shape {
+		display: none;
+	}
+	// Section Health Styles
+	.xs-health{
+		.xs-water-mark{
+			font-size: rem(140px);
+		}
+	}
+
+	// HOME LIGHT
+	// ==================
+	// Slider Styles
+	.xs-slider-light-owl{
+		.xs-light-slide1,
+		.xs-light-slide2{
+			margin-top: 80px;
+		}
+		.xs-before-text,
+		.xs-after-text{
+			top: 0px;
+			font-size: rem(100px);
+		}
+		.xs-before-text{
+			left: calc(50% - 170px);
+		}
+		.xs-after-text{
+			left: calc(50% + 30px);
+		}
+		.xs-light-slide-img3,
+		.xs-light-slide-img2,
+		.xs-light-slide-img1{
+			display: none;
+		}
+	}
+
+	// TRAINER-DETAILS
+	// ==================
+	.xs-trainer-details{
+		.xs-trainer-thumb{
+			margin-bottom: 50px;
+		}
+	}
+
+	// SERVICE DETAILS
+	// =================
+	// Section CTA Styles
+	.xs-cta{
+		h2{
+			margin: 0 0 30px;
+		}
+		.xs-btn-wraper{
+			text-align: left;
+		}
+	}
+
+	// CONTACT
+	// =================
+	.xs-contact-list{
+		h3{
+			margin-bottom: 15px;
+		}
+	}
+	.xs-contact-form {
+	    padding: 40px;
+	}
+}
+
+/* Landscape phones and smaller */
+
+@media (max-width: 575px) {
+	// Common Styles
+	.xs-banner-area {
+		padding-top: 30px;
+		padding-bottom: 35px;
+
+		.xs-banner-title{
+			font-size: rem(36px);
+			line-height: rem(42px);
+		}
+	}
+	// Header Styles
+	.xs-menu-tools{
+		display: none;
+	}
+	// Banner Styles
+	.xs-banner-dark,
+	.xs-banner{
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.xs-shape{
+		top: 120px;
+	}
+	// Section BMI Styles
+	.xs-bmi{
+		.xs-icon{
+			display: none;
+		}
+	}
+	// Section Services Styles
+	.xs-service{
+		.xs-service-content{
+			transform: translate(0, 55px);
+		}
+	}
+	// Section Testimonial Styles
+	.xs-testimonial-wraper{
+		.xs-testimonial-shape {
+			display: none;
+		}
+	}
+
+	// HOME DARK
+	// ================
+	// Header Styles
+	.xs-container {
+	    max-width: 100%;
+	}
+	.xs-header-dark{
+		&:before {
+			width: calc(50% + 90px);
+			top: 66px;
+		}
+		.xs-navbar-brand{
+			margin-top: 0;
+		}
+		.xs-header-contact,
+		.xs-header-social {
+			width: 100%;
+			float: none;
+			text-align: center;
+		}
+		.elementskit-menu-hamburger{
+			margin-left: 0;
+		}
+	}
+	// Section Health Styles
+	.xs-health{
+		.xs-water-mark{
+			font-size: rem(70px);
+		}
+	}
+
+	// HOME LIGHT
+	// ==================
+	// Slider Styles
+	.xs-banner-light-left,
+	.xs-banner-light-right{
+		display: none;
+	}
+	.xs-slider-light-owl{
+		.xs-slide-inner{
+			min-height: 450px;
+
+			.xs-banner-title {
+				margin-bottom: 35px;
+				font-size: 2.5rem;
+				line-height: 3rem;
+
+				&:before {
+					bottom: -20px;
+				}
+			}
+			.btn{
+				margin-top: 10px;
+				padding: 10px 20px;
+			}
+		}
+		.xs-before-text,
+		.xs-after-text{
+			top: 0;
+			font-size: rem(80px);
+			line-height: rem(80px);
+		}
+		.xs-before-text{
+			left: calc(50% - 145px);
+		}
+		.xs-after-text{
+			left: calc(50% + 10px);
+		}
+		.xs-light-slide1,
+		.xs-light-slide2{
+		    margin-top: 80px;
+		}
+	}
+
+	// ABOUT
+	// =======
+	.xs-team-wraper{
+		.xs-team-right-shape{
+			top: 230px;
+		}
+	}
+	// Section Contact Styles
+	.xs-contact-info{
+		ul li span{
+			width: 100%;
+			float: none;
+		}
+	}
+	// Section Help Styles
+	.xs-help-wm{
+		display: none;
+	}
+
+	// SERVICE DETAILS
+	// =================
+	.xs-team-grid{
+		.xs-line{
+			margin-bottom: 20px;
+
+			&:before{
+				display: none;
+			}
+		}
+	}
+
+	// CONTACT
+	// =================
+	.xs-contact-form{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

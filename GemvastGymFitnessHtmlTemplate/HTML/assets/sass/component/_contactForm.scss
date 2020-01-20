@@ -1,0 +1,85 @@
+.xs-contact-form{
+	position: relative;
+	margin-top: -80px;
+	padding: 70px 100px 60px 90px;
+	background: $color-white;
+	box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.06);
+
+	.xs-section-heading{
+		margin-bottom: 0;
+
+		p{
+			font-size: rem(16px);
+		}
+	}
+	.xs-form{
+		margin-top: 30px;
+
+		.xs-form-anim{
+			padding-top: 35px;
+		}
+		.xs-message-box{
+			padding-top: 30px;
+
+			.input-label{
+				top: 35px;
+				bottom: inherit;
+			}
+			&.active {
+				.input-label{
+					top: 13px;
+					bottom: inherit;
+				}
+			}
+			textarea{
+				height: 206px;
+				padding-top: 12px;
+				resize: none;
+			}
+		}
+		.btn-primary {
+		    padding: 15px 35px;
+		}
+	}
+}
+
+.xs-form {
+	.custom-control-label {
+		color: $color-white;
+		&::before {
+			background-color: #222222;
+			@include transition;
+		}
+		&::after {
+			@include transition;
+			//transform: scale(0);
+		}
+	}
+	.custom-radio {
+		.custom-control-input {
+			&:checked {
+				~.custom-control-label {
+					&::before {
+						background-color: #f63c25;
+					}
+					&::after {
+						transform: scale(1);
+					}
+				}
+			}
+			&:focus {
+				~.custom-control-label {
+					&::before {
+						box-shadow: 0 0 0 0.2rem rgba(#f63c25,.25);
+					}
+				}
+			}
+		}
+	}
+}
+
+.xs-dark-shadow{
+	@extend .xs-contact-form;
+	background: #121212;;
+
+}

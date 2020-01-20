@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Gemvast HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<!-- Le styles -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<style type="text/css">
+		body {
+			padding-bottom: 40px;
+		}
+
+		a {
+			color: #6A1B9A;
+		}
+
+		header {
+			background-color: #eee;
+			border-top: 10px solid #6A1B9A;
+			padding: 140px 0;
+			margin-bottom: 30px;
+		}
+
+		header h1 {
+			color: #6A1B9A;
+			text-align: center;
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+
+		.span9 h2 a {
+			font-size: 16px
+		}
+
+		header p {
+			text-align: center;
+		}
+
+		.nav {
+			width: 250px;
+			overflow-x: auto;
+			height: 500px;
+		}
+
+		.nav li a {
+			text-transform: capitalize;
+		}
+
+		.affix {
+			top: 40px;
+		}
+
+		.affix-top {
+			top: 200px;
+		}
+
+		hr {
+			border: 1px solid #ccc;
+			margin-bottom: 50px;
+		}
+
+		.icons {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.icons li {
+			float: left;
+			width: 25%;
+		}
+
+		.social-icons {
+			background-color: #3f3f3f;
+		}
+
+		.social-icons ul {
+			list-style: none;
+			margin: 0;
+			padding: 10px;
+		}
+
+		.social-icons li {
+			float: left;
+			width: 25%;
+			color: #fff;
+			margin-bottom: 10px;
+		}
+
+		.show-grid {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+
+		.show-grid [class*="span"] {
+			background-color: #eee;
+			text-align: center;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			min-height: 40px;
+			line-height: 40px;
+		}
+
+		.show-grid [class*="span"]:hover {
+			background-color: #ddd;
+		}
+
+		.show-grid .show-grid {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.show-grid .show-grid [class*="span"] {
+			margin-top: 5px;
+		}
+
+		.show-grid [class*="span"] [class*="span"] {
+			background-color: #ccc;
+		}
+
+		.show-grid [class*="span"] [class*="span"] [class*="span"] {
+			background-color: #999;
+		}
+	</style>
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="font/css/font-awesome.min.css">
+	<!--[if IE 7]><link rel="stylesheet" href="font/css/font-awesome-ie7.min.css"><![endif]-->
+
+
+	<script type="text/javascript" src="js/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+	<script type="text/javascript" src="js/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="js/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="js/syntaxhighlighter_3.0.83/scripts/shBrushPhp.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="js/syntaxhighlighter_3.0.83/styles/shCoreDefault.css" />
+	<link type="text/css" rel="stylesheet" href="js/syntaxhighlighter_3.0.83/styles/shThemeRDark.css" />
+
+	<style>
+		.syntaxhighlighter .comments, .syntaxhighlighter .comments a {
+			color: #4CAF50 !important;
+		}
+	</style>
+
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+
+</head>
+
+<body>
+
+	<header id="toc">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<h1>"Gemvast HTML Template"</h1>
+					<p>Thank you for purchasing my Template. If you have any questions that are beyond the scope of this help file,
+						please feel free to email via my user page contact form <a href="https://themeforest.net/user/xpeedstudio">here</a>.
+						Thanks so much!</p>
+					<p><strong>Created: 8/06/2018 | By: XpeedStudio | Support Desk <a href="https://support.xpeedstudio.com/">https://support.xpeedstudio.com/</a></strong></p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="200">
+					<li><a href="#html_structure"><i class="icon-angle-right"></i> HTML Structure</a></li>
+					<li><a href="#css_structure"><i class="icon-angle-right"></i> CSS Structure</a></li>
+
+					<li><a href="#color-styles"><i class="icon-angle-right"></i> Color Styles (Variations)</a></li>
+					<li><a href="#header-logo"><i class="icon-angle-right"></i> Brand / Logo</a></li>
+					<li><a href="#nav-links"><i class="icon-angle-right"></i> Navigation</a></li>
+					<li><a href="#single-page-menu"><i class="icon-angle-right"></i> Single Page Menu</a></li>
+					<li><a href="#section_heading"><i class="icon-angle-right"></i> Section heading</a></li>
+					<li><a href="#material_input"><i class="icon-angle-right"></i>  Input Style</a></li>
+					<li><a href="#pricing_table"><i class="icon-angle-right"></i> Pricing table</a></li>
+					<li><a href="#parallax_bg"><i class="icon-angle-right"></i> Parallax Image</a></li>
+					<li><a href="#team"><i class="icon-angle-right"></i> Team</a></li>
+					<li><a href="#contact"><i class="icon-angle-right"></i> Contact</a></li>
+					<li><a href="#contact_init"><i class="icon-angle-right"></i> Contact Init</a></li>
+					<li><a href="#phone_number_init"><i class="icon-angle-right"></i> Phone Number</a></li>
+					<li><a href="#subscribe_form"><i class="icon-angle-right"></i> Subscribe Form</a></li>
+					<li><a href="#google_map"><i class="icon-angle-right"></i> Map Api</a></li>
+
+					<li><a href="#javascript"><i class="icon-angle-right"></i> JavaScript</a></li>
+					<!--<li><a href="#psd-file"><i class="icon-angle-right"></i> PSD File</a></li>-->
+					<li><a href="#credits"><i class="icon-angle-right"></i> Credits</a></li>
+				</ul>
+			</div>
+			<div class="span9">
+
+				<div class="row" id="html_structure">
+					<div class="span9">
+						<h2><strong>HTML Structure</strong> - <a href="#top">top</a></h2>
+						<p>Gemvast HTML Template is built with the Bootstrap 4 framework - that means you have access to all the great
+							features, css &amp; js goodies has to offer. Bootstrap includes a responsive, mobile first fluid grid system
+							that appropriately scales up to 12 columns as the device or viewport size increases.</p>
+						<p>To learn more about Bootstrap's grid system, please refer to <a href="https://getbootstrap.com/docs/4.1/layout/grid/">Bootstrap
+								4 Grid</a></p>
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" id="css_structure">
+					<div class="span9">
+						<h2><strong>CSS Structure</strong> - <a href="#top">top</a></h2>
+						<p>I'm using one main CSS file <strong>(assets/css/styles.css)</strong> and sass file available on <strong>(assets/sass/style.scss)</strong>,
+							in this template which you are free to modify depending on the customization you require. There are also other
+							additional style sheets that I do not recommend changing. Those style sheets reside in the 'css' folder and
+							'sass' file on 'sass' folder.</p>
+						<ul>
+							<li><strong>https://fonts.google.com/</strong> - Web font Cabin from Google Fonts</li>
+							<li><strong>bootstrap.min.css</strong> - This is a main stylesheet that required for basic template styling like
+								form, input, div, list element and etc.</li>
+							<li><strong>font-awesome.min.css</strong> - Web font containing all the icons from the Bootstrap framework and
+								more.</li>
+							<li><strong>styles.css</strong> - The main stylesheet you are encouraged to modify.</li>
+						</ul>
+						<p></p>
+						<p>The Styles CSS file contains all of the specific stylings for the page. The file is separated into sections
+							using:</p>
+						<pre class="brush: css">
+
+
+------------------------------- Table Of Content  ------------------------------------
+
+- Body
+1. header
+2. banner
+3. about us
+4. services intro
+5. services
+6. help
+7. class-schedule
+8. trainer
+9. bmi
+10. testimonial
+11. pricing
+12. blog
+13. health
+14. shop
+15. map about
+16. strength
+17. trainer details
+18. service info
+19. team carousel
+20. contact
+21. contact form
+22. call to action
+23. footer
+
+=====================================================**************************/
+						</pre>
+						<p>If you would like to edit a specific section of the site, simply find the appropriate label in the css or sass
+							file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" id="color-styles">
+					<div class="span9">
+						<h2><strong>Color Styles (Variations)</strong> - <a href="#top">top</a></h2>
+						<p>This theme comes with Unlimited color variations. And you can change the color from sass variable. To change the color style from the theme edit the following
+							lines:</p>
+						<pre class="brush: css">
+
+						...
+
+						// primary and secondary color list
+						$color-primary: #1868dd; // Navy Blue
+						$color-secondary: #103dbe; // Limerick
+						$color-ternary: #21069b;
+
+						// tilte color
+						$color-black: #000000
+
+						</pre>
+						<p>Just change the color code name for example form <code>$color-primary: #1868dd;</code> to <code>#114898</code>.
+							Available <code>assets/sass/variable/_variable.scss</code> directory</p>
+						<hr />
+						<p>You must be compile the sass file  top see the change</p>
+					</div>
+				</div>
+
+				<div class="row" id="header-logo">
+					<div class="span9">
+						<h2><strong>Brand / Logo</strong> - <a href="#top">top</a></h2>
+						<p>To change the logo edit the following lines:</p>
+						<pre class="brush: xml">
+						...
+
+						<!-- Logo start -->
+
+						<a class="xs-navbar-brand" href="index.html">
+							<img src="assets/images/logo/logo-black.png" alt="navbar logo">
+						</a>
+						<!-- Logo end -->
+						...
+
+						<!-- Footer logo -->
+						<div class="xs-footer-logo">
+									<img src="assets/images/logo/logo-red.png" alt="logo">
+								</div>
+						<!-- footer logo end -->
+
+						</pre>
+						<p>The value is the header logo image path from the <code>assets/images/logo/logo*.png</code></p>
+
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" id="nav-links">
+					<div class="span9">
+						<h2><strong>Navigation</strong> - <a href="#top">top</a></h2>
+						<p>To add or change a navigation item edit the following lines:</p>
+						<h2>After editing the navigation bar:</h2>
+						<pre class="brush: xml">
+							...
+							<!-- main nav linnks start -->
+							<div class="elementskit-menu-container elementskit-menu-offcanvas-elements">
+                    <!-- start menu item list -->
+                    <ul class="elementskit-navbar-nav nav-alignment-dynamic">
+                    	<li class="elementskit-dropdown-has">
+                    		<a href="#">
+                    			Home
+                    		</a>
+                    		<ul class="elementskit-dropdown elementskit-submenu-panel">
+                    			<li><a href="index.html">Home</a></li>
+                    		</ul>
+                    	</li>
+                    	<li class="elementskit-dropdown-has">
+                    		<a href="#">
+                    			Pages
+                    		</a>
+                    		<ul class="elementskit-dropdown elementskit-submenu-panel">
+                    			<li><a href="about.html">About</a></li>
+                    		</ul>
+                    	</li>
+                    	<li class="elementskit-dropdown-has">
+                    		<a href="services.html">
+                    			Services
+                    		</a>
+                    		<ul class="elementskit-dropdown elementskit-submenu-panel">
+                    			<li><a href="services.html">Service</a></li>
+                    			<li><a href="service-details.html">Service Details</a></li>
+                    		</ul>
+                    	</li>
+                    	<li class="elementskit-dropdown-has">
+                    		<a href="trainer.html">Trainers</a>
+                    		<ul class="elementskit-dropdown elementskit-submenu-panel">
+                    			<li><a href="trainers.html">Trainers</a></li>
+                    			<li><a href="trainer-details.html">Trainer Details</a></li>
+                    		</ul>
+                    	</li>
+                    	<li>
+                    		<a href="contact.html">Contact</a>
+                    	</li>
+                    </ul><!-- end menu item list -->
+
+
+								<!-- end menu logo and close button -->
+                </div>
+							<!-- .xs-menus -->
+						</pre>
+						<p>The link "href" is the page link from the element for the "goes to" action.</p>
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" id="single-page-menu">
+					<div class="span9">
+						<h2><strong>Single Page Menu</strong> - <a href="#top">top</a></h2>
+						<p>To add or change a navigation item edit the following lines:</p>
+						<h2>After editing the navigation bar:</h2>
+						<pre class="brush: xml">
+							...
+							<!-- start menu container -->
+                <div class="elementskit-menu-container elementskit-menu-offcanvas-elements">
+                    <!-- start menu item list -->
+                    <ul class="elementskit-navbar-nav nav-alignment-dynamic">
+                    	<li>
+                    		<a href="#home">Home</a>
+                    	</li>
+                    	<li>
+                            <a href="#about">services</a>
+                        </li>
+                        <li>
+                            <a href="#training">TRAINING</a>
+                        </li>
+                        <li>
+                            <a href="#schedule">SCHEDULE</a>
+                        </li>
+                        <li>
+                            <a href="#price">PRICING</a>
+                        </li>
+                    	<li>
+                    		<a href="#contact">Contact</a>
+                        </li>
+
+                    </ul><!-- end menu item list -->
+
+					<!-- start menu logo and close button (for mobile offcanvas menu) -->
+                    <div class="elementskit-nav-identity-panel">
+                        <h1 class="elementskit-site-title">
+                            <a class="elementskit-nav-logo" href="index.html">
+                            	<img src="assets/images/logo/logo-black.png" alt="navbar logo">
+                            </a>
+                        </h1>
+                        <button class="elementskit-menu-close elementskit-menu-toggler" type="button">
+                            <i class="icon icon-cancel"></i>
+                        </button>
+                    </div>
+					<!-- end menu logo and close button -->
+                </div>
+							<!-- end menu container -->
+						</pre>
+						<p>The link "href" is the page link from the element for the "goes to" action.</p>
+						<hr />
+					</div>
+				</div>
+
+
+
+				<div class="row" id="section_heading">
+					<div class="span9">
+						<h2><strong>Section heading</strong> - <a href="#top">top</a></h2>
+						<p>To add or change a team edit the following lines:</p>
+						<pre class="brush: xml">
+							...
+							<!-- section heading -->
+							<div class="row">
+								<div class="col-lg-8 mx-auto">
+									<div class="xs-section-heading text-center">
+										<h2>Our <span>Trainers</span></h2>
+										<p>World is committed to making participation in the event a harassment free experience for everyone, regardless of level of experience.</p>
+									</div>
+								</div>
+							</div>
+							<!-- section heading end -->
+
+						</pre>
+						<p>You add title parallax just add <code>data-scrollax="properties: { translateY: '-250px' }"</code> this code
+							and also add parent <code>data-scrollax-parent="true"</code>.</p>
+						<p>Remove parallax title just remove <code>data-scrollax="properties: { translateY: '-250px' }"</code> and also
+							<code>data-scrollax-parent="true"</code></p>
+						<hr>
+					</div>
+				</div>
+
+				
+
+				
+
+				
+
+				<div class="row" id="material_input">
+					<div class="span9">
+						<h2><strong>Input Style</strong> - <a href="#top">top</a></h2>
+						
+						<strong>Add Class For Dark Version</strong> <code>xs-form-dark</code>
+						<hr>
+						<pre class="brush: xml">
+							...
+							<form action="#" class="xs-form xs-contact-form" id="xs-contact-form">
+								<div class="row">
+										<div class="col-md-6">
+											<div class="form-group xs-form-anim mb-4">
+												<label class="input-label" for="xs-name">Your name</label>
+												<input type="text" id="xs-name" class="form-control">
+											</div>
+											<div class="form-group xs-form-anim">
+												<label class="input-label" for="xs-email">Your email address</label>
+												<input type="text" id="xs-email" class="form-control">
+											</div>
+											
+										</div>
+										<div class="col-md-6">
+										<div class="form-group xs-form-anim ">
+												<label class="input-label" for="xs-phone">Mobile number</label>
+												<input type="text" id="xs-phone" class="form-control">
+											</div>
+											<div class="form-group xs-form-anim xs-message-box">
+												<label class="input-label" for="xs-message">Your massage</label>
+												<textarea id="xs-message" class="form-control"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<p class="form-text text-muted xs-mt-50">We do not sell, share, trade your information with anyone for any reason. We won’t give spam mails.</p>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group xs-mt-60 text-right">
+												<button type="submit" id="xs_contact_submit" class="btn btn-primary">Submit Now <span class="icon icon-plus"></span></button>
+											</div>
+										</div>
+									</div>
+								</form>
+						</pre>
+					</div>
+				</div>
+
+				<div class="row" id="pricing_table">
+					<div class="span9">
+						<h2><strong>Pricing plan table</strong> - <a href="#top">top</a></h2>
+						<p>To add or change a pricing table edit the following lines:</p>
+						<pre class="brush: xml">
+							...
+							<div class="col-lg-4">
+									<div class="xs-pricing" style="background-image: url(assets/images/pricing/pricing_bg.png);">
+										<h3>Basic Plan</h3>
+										<p>
+											<sup>$</sup>
+											<span>49</span>
+											<sub>/mo</sub>
+										</p>
+										<ul class="list-unstyled">
+											<li>Get Free WiFi</li>
+											<li>Month to Month</li>
+											<li>No Time Restrictions</li>
+											<li>Gym and Cardio</li>
+											<li>Service Locker Rooms</li>
+										</ul>
+										<a href="#" class="btn btn-primary">Enroll Now</a>
+									</div>
+							</div>
+						</pre>
+					</div>
+				</div>
+
+				
+
+				<div class="row" id="parallax_bg">
+					<div class="span9">
+						<h2><strong>Parallax image</strong> - <a href="#top">top</a></h2>
+						<p>To add or change parallax image open file <code> eaxmple (filename.html)</code>change image <code>assets/images/paralax-bg/paralax-bg-1.png</code>,
+							find and edit code below:</p>
+						<pre class="brush: js">
+					...
+
+					<div class="parallaxie" style="background-image: url(assets/images/paralax-bg/paralax-bg-1.png)"></div>
+
+					...
+
+						</pre>
+						<hr />
+					</div>
+				</div>
+
+				
+
+
+			
+
+				<div class="row" id="team">
+					<div class="span9">
+						<h2><strong>Team</strong> - <a href="#top">top</a></h2>
+						<p>To add or change team content edit the following lines:</p>
+						<pre class="brush: xml">
+					...
+						<!-- team -->
+						<div class="xs-team">
+								<div class="xs-team-thumb">
+									<img src="assets/images/team/team-1.jpg" alt="Jhon Statham">
+									<div class="xs-team-overlay d-flex align-items-center">
+										<ul class="list-unstyled xs-team-share">
+											<li>
+												<a href="#"><i class="icon icon-twitter"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="icon icon-facebook"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="icon icon-linkedin"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="icon icon-instagram"></i></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="xs-team-content">
+									<h3>
+										<a href="trainer-details.html">Jhon Statham</a>
+									</h3>
+									<p>Yoga Trainer</p>
+								</div>
+							</div>
+						<!-- team end -->
+
+						</pre>
+						<p>change team image and add your own image just following instructions: <code>assets/images/team/1.jpg</code>
+						</p>
+						<hr />
+					</div>
+				</div>
+
+				
+
+
+				
+
+				<div class="row" id="contact">
+					<div class="span9">
+						<h2><strong>Contact</strong> - <a href="#top">top</a></h2>
+						<p>To add or change a contact filed edit the following lines:</p>
+						<pre class="brush: xml">
+					...
+
+						<!-- contact form start -->
+						<form action="#" id="xs-contact-form" class="contact-form" method="post">
+							<div class="row">
+								<div class="col-lg-6">
+									<input type="text" placeholder="Name *" name="name" id="xs_contact_name" class="form-control">
+								</div>
+								<div class="col-lg-6">
+									<input type="email" placeholder="Email *" name="email" id="xs_contact_email" class="form-control">
+								</div>
+							</div>
+							<input type="text" placeholder="Subject *" name="subject" id="xs_contact_subject" class="form-control">
+							<textarea name="massage" id="x_contact_massage" placeholder="Your Message... *" class="form-control" cols="30" rows="10"></textarea>
+							<input type="submit" name="submit" id="xs_contact_submit" class="submit-btn" value="Submit">
+						</form>
+						<!-- contact form end -->
+						</pre>
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" id="contact_init">
+					<div class="span9">
+						<h2><strong>Contact</strong> - <a href="#top">top</a></h2>
+						<p>The Contact form is based on jQuery. You don't have to know PHP. To change sample email adress, open <code>assets/php/c_config.php</code>,
+							find and edit code below:</p>
+						<pre class="brush: xml">
+								...
+								<!-- put your email address here -->
+
+								define('YOUR_EMAIL_ADDRESS', 'info@example.com');
+								define('YOUR_EMAIL_SUBJECT', 'your mail subject');
+								define('YOUR_SUCCESS_MASSAGE', 'Successfully Sent Email');
+
+						</pre>
+					</div>
+				</div>
+
+				<div class="row" id="phone_number_init">
+					<div class="span9">
+						<h2><strong>Phone number</strong> - <a href="#top">top</a></h2>
+						<p>To add or change your custom number find and edit code below:</p>
+						<pre class="brush: xml">
+							...
+							<a href="tel:+1%20(254)%20587-2548">+1 (254) 587-2548</a>
+						</pre>
+						<p>you add your own number just follow it <code>tel:+1%20(254)%20587-2548</code> you fill your space <code>%20</code>
+							and its working fine</p>
+						<hr>
+					</div>
+				</div>
+
+				<div class="row" id="subscribe_form">
+					<div class="span9">
+						<h2><strong>Subscribe form</strong> - <a href="#top">top</a></h2>
+						<p>To add or change your custom number find and edit code below:</p>
+						<pre class="brush: xml">
+							<form action="#" class="newsletter-form subscribe-form" method="POST">
+								<input type="email" name="email" id="sub-input-one" placeholder="Your Email" class="form-control">
+								<label for="sub-input-one"></label>
+								<button type="submit" class="send-button"><i class="icon icon-paper-plane"></i></button>
+							</form><!-- .newsletter-form END -->
+							...
+							if ($('.subscribe-form').length > 0) {
+								$('.subscribe-form').ajaxChimp({
+									url: 'https://facebook.us8.list-manage.com/subscribe/post?u=85f515a08b87483d03fee7755&amp;id=66389dc38b'
+								});
+							}
+						</pre>
+						<p>you add your own number just follow this two link <a href="https://support.xpeedstudio.com/knowledgebase/how-to-get-a-mailchimp-form-action-url/"
+							 target="_blank">How to get a MailChimp form action URL</a> <br> <a href="https://support.xpeedstudio.com/obtain-your-mailchimp-form-action-url/"
+							 target="_blank">Obtain Your MailChimp Form Action URL</a></p>
+						<hr>
+					</div>
+				</div>
+
+				<div class="row" id="google_map">
+					<div class="span9">
+						<h2><strong>Google Map</strong> - <a href="#top">top</a></h2>
+						<p>To add or change your custom number find and edit code below:</p>
+						<p><strong>Map Api Issue</strong><a href="https://support.xpeedstudio.com/knowledgebase/how-to-create-map-api-key/" target="_blank">How To Create Map Api Key</a></p>
+						<p><strong>Open map shortcode and create an API key from description link</strong><a href="https://console.developers.google.com/flows/enableapi?apiid=places_backend,maps_backend,geocoding_backend,directions_backend,distance_matrix_backend,elevation_backend&keyType=CLIENT_SIDE&reusekey=true" target="_blank">Click here</a></p>
+						<hr>
+					</div>
+				</div>
+
+				<div class="row" id="javascript">
+					<div class="span9">
+						<h2><strong>JavaScript</strong> - <a href="#top">top</a></h2>
+						<p>This theme imports the following Javascript files.</p>
+						<ul>
+							<li>assets/js/jquery-3.2.1.min.js</li>
+							<li>assets/js/plugins.js</li>
+							<li>assets/js/bootstrap.min.js</li>
+							<li>assets/js/isotope.pkgd.min.js</li>
+							<li>assets/js/jquery.magnific-popup.min.js</li>
+							<li>assets/js/owl.carousel.min.js</li>
+							<li>assets/js/jquery.parallax-scroll.js</li>
+							<li>assets/js/jquery.ajaxchimp.min.js</li>
+							<li>assets/js/jquery.parallax.js</li>
+							<li>https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k</li>
+							<li>assets/js/main.js</li>
+						</ul>
+						<hr />
+					</div>
+				</div>
+
+
+<!--				<div class="row" id="psd-file">
+					<div class="span9">
+						<h2><strong>PSD Files</strong> - <a href="#top">top</a></h2>
+						<p>The following Photoshop file are included with the download package place in /PSD/ folder: <br />
+							<strong>gemvast.psd</strong>
+						</p>
+						<hr />
+					</div>
+				</div>-->
+
+
+				<div class="row" id="credits">
+					<div class="span9">
+						<h2><strong>Credits</strong> - <a href="#top">top</a></h2>
+						<ul class="nav nav-list">
+							<li><a href="http://getbootstrap.com/" target="_blank"><i class="icon-angle-right"></i> Twitter Bootstrap</a></li>
+							<li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="icon-angle-right"></i> Font
+									Awesome</a></li>
+							<li><a href="https://owlcarousel2.github.io/OwlCarousel2/index.html" target="_blank"><i class="icon-angle-right"></i>
+									owl carousel</a></li>
+							<li><a href="http://jquery.com/" target="_blank"><i class="icon-angle-right"></i> jQuery</a></li>
+						</ul>
+						<hr />
+						<p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help
+							you if you have any questions relating to this template. No guarantees, but I'll do my best to assist. If you
+							have a more general question relating to the templates on ThemeForest, you might consider visiting the forums
+							and asking your question in the "Item Discussion" section.</p>
+						<p><strong>XpeedStudio</strong></p>
+						<p></p>
+						<p><a href="#top">Go To Table of Contents</a></p>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script>
+		jQuery(document).ready(function ($) {
+			$(document).on('click', '.nav-tabs li a', function (event) {
+				event.preventDefault();
+				/* Act on the event */
+
+				var targets = $(this.getAttribute('href'));
+
+				$('body, html').animate({
+					scrollTop: targets.offset().top
+				}, 1000);
+			});
+
+			$(document).on('click', '.span9 a[href="#top"]', function (event) {
+				event.preventDefault();
+				/* Act on the event */
+
+				$('body, html').animate({
+					scrollTop: 0
+				}, 1000);
+			});
+		});
+	</script>
+</body>
+
+</html>
